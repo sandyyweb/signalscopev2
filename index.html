@@ -38,7 +38,7 @@ button,input,select,textarea{font:inherit;padding:9px 14px;border-radius:12px;bo
 @media print{aside,header,.np{display:none!important}body{background:#fff}main{padding:0}}
 </style></head><body><div id="root"></div><div id="t"></div><div class="md" id="md" onclick="if(event.target==this)this.style.display='none'"><div id="mb"></div></div>
 <script>
-const SUPABASE_URL="https://zfqyzsyaoipghhdlfnnr.supabase.co",SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpmcXl6c3lhb2lwZ2hoZGxmbm5yIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI1NjgyNjcsImV4cCI6MjEwODE0NDI2N30.07ZwIM4w0D9a9IoFXB3wIL1INbW1IIa77P63v0tVNAE"; // anon key is public by design; NEVER put the service-role key here
+const SUPABASE_URL="https://yproqmahsgjotoasvtdf.supabase.co",SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inlwcm9xbWFoc2dqb3RvYXN2dGRmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI1OTkwNTAsImV4cCI6MjEwODE3NTA1MH0.LJBMvTOuQ9WtZULwHPCIVzYxXnRAH9Tlvc5FBTQpO-8"; // anon key is public by design; NEVER put the service-role key here
 const LIB=typeof supabase!=="undefined",CONFIGURED=LIB&&/^https:\/\/[a-z0-9-]+\.supabase\.co\/?$/.test(SUPABASE_URL)&&!SUPABASE_ANON_KEY.startsWith("YOUR_");
 const sb=CONFIGURED?supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY):null;
 const $=s=>document.querySelector(s),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
